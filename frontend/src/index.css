@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-50: #fefefe;
+  --color-cream-100: #fdfbf7;
+  --color-cream-200: #faf6ed;
+  --color-cream-300: #f5eed8;
+  --color-cream-400: #eee1b8;
+  --color-cream-500: #e4d194;
+  --color-cream-600: #d6bc6b;
+  --color-cream-700: #c8a74a;
+  --color-cream-800: #b08a3d;
+  --color-cream-900: #8f6f35;
+  --color-cream-950: #4d3a1c;
+  
+  --color-gold-50: #fefce8;
+  --color-gold-100: #fef9c3;
+  --color-gold-200: #fef08a;
+  --color-gold-300: #fde047;
+  --color-gold-400: #facc15;
+  --color-gold-500: #eab308;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+  --color-gold-800: #854d0e;
+  --color-gold-900: #713f12;
+  --color-gold-950: #422006;
+
+  --font-family-quintessential: "Quintessential", serif;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    @apply h-2 bg-cream-200 rounded-full w-full;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    @apply w-4 h-4 bg-gold-400 rounded-full cursor-pointer shadow-md;
+  }
+  input[type="range"]::-moz-range-thumb {
+    @apply w-4 h-4 bg-gold-400 rounded-full cursor-pointer shadow-md border-none;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    @apply h-2 bg-cream-200 rounded-full;
+  }
+  input[type="range"]::-moz-range-track {
+    @apply h-2 bg-cream-200 rounded-full;
+  }
+  input[type="range"]:focus::-webkit-slider-thumb {
+    @apply ring-2 ring-gold-400 ring-offset-2 ring-offset-cream-50;
+  }
+  input[type="range"]:focus::-moz-range-thumb {
+    @apply ring-2 ring-gold-400 ring-offset-2 ring-offset-cream-50;
+  }
+
+  @keyframes wave {
+    0% { background-position: 0 0; }
+    100% { background-position: 200% 0; }
+  }
+  .animate-wave {
+    animation: wave 20s linear infinite;
+  }
+  .bg-wave-pattern {
+    background-image: url('/wave-pattern.png');
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .animate-blink {
+    animation: blink 0.7s infinite;
+  }
+  .glow-effect {
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+  }
+
+  .notifications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .permission-banner {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .banner-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .bell-icon {
+    font-size: 24px;
+    color: #0d6efd;
+  }
+  
+  .banner-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .allow-btn {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dismiss-btn {
+    background: transparent;
+    border: 1px solid #dee2e6;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .notifications-list {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .list-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mark-all-read {
+    background: transparent;
+    border: none;
+    color: #0d6efd;
+    cursor: pointer;
+  }
+  
+  .empty-state {
+    padding: 40px 20px;
+    text-align: center;
+    color: #6c757d;
+  }
+  
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+  }
+  
+  .notification-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .notification-item.unread {
+    background: #f8f9fa;
+  }
+  
+  .notification-icon {
+    font-size: 20px;
+    color: #6c757d;
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .message {
+    margin: 0;
+    color: #212529;
+  }
+  
+  .time {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
+  .unread-badge {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: #0d6efd;
+    border-radius: 50%;
+  }
+
+.font-quintessential {
+  font-family: "Quintessential", serif;
+}

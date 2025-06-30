@@ -1,0 +1,11 @@
+2025-06-30 16:10:48 [31merror[39m: ReferenceError: fs is not defined
+    at DiskStorage.destination [as getDestination] (file:///home/sujan-shrestha/Documents/mp-stationery/backend/routes/poster.js:14:5)
+    at DiskStorage._handleFile (/home/sujan-shrestha/Documents/mp-stationery/node_modules/multer/storage/disk.js:31:8)
+    at /home/sujan-shrestha/Documents/mp-stationery/node_modules/multer/lib/make-middleware.js:153:17
+    at allowAll (/home/sujan-shrestha/Documents/mp-stationery/node_modules/multer/index.js:8:3)
+    at wrappedFileFilter (/home/sujan-shrestha/Documents/mp-stationery/node_modules/multer/index.js:44:7)
+    at Multipart.<anonymous> (/home/sujan-shrestha/Documents/mp-stationery/node_modules/multer/lib/make-middleware.js:123:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (/home/sujan-shrestha/Documents/mp-stationery/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/home/sujan-shrestha/Documents/mp-stationery/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/home/sujan-shrestha/Documents/mp-stationery/node_modules/busboy/lib/types/multipart.js:394:37)

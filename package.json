@@ -1,0 +1,41 @@
+{
+  "name": "mp_stationery",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "NODE_ENV=DEVELOPMENT nodemon backend/server.js",
+    "prod": "NODE_ENV=PRODUCTION node backend/server.js",
+    "seeder": "node backend/seeder/seeder.js"
+  },
+  "author": "Sujan Shrestha",
+  "license": "ISC",
+  "description": "FullStack Ecommerce app using MERN Stack",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "nodemailer": "^6.10.0",
+    "sanitize-html": "^2.17.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
